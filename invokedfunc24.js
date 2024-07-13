@@ -23,9 +23,12 @@
 
 //if we want to print name also then the syntax
 //called as unnamed iifi
+
 ((name) => {
     console.log(`${name}from this we can also execute like this`)
 })('hariom ')
-
+// ((name) => {
+//     console.log(`${name}from this we can also execute like this`)
+// })('aryan ')
  
  
