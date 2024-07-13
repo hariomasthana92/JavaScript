@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>DOM learning</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class = "bg-black">
+    <div>
+        <h1 id = "title" class = "heading">DOM learning on cwc
+            <span style="display: none;">test text</span>
+        </h1>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <input type="password" name="" id="">
+        <ul>
+            <li class="list-item">one</li>
+            <li class="list-item">two</li>
+            <li class="list-item">three</li>
+            <li class="list-item">four</li>
+        </ul>
+    </div>
+</body>
+</html>
+<!-- In dom we use to work on console and if we want to see
+  anythong related to a site or website then for example we 
+  want to find the element by name then document.getElementById('title')
+  if we want to find something by id then document.getElementById('title').id
+  if we want to find class then find it by using classname istead of id
+  document.getElementById('title').classname we can also get the attribute by using 
+  document.getElementById('title').getAttribute('can be => class, id')
+  we can also set the attribute by which we can overwrite the attribute
+  document.getElementById('title').setAttribute('class', 'test') this syntax means
+  in class attribute whatever written is overwrite by test....
+  we can store variable by{ const title =  document.getElementById('title')}
+  now we store it so we can also edit it and insrert new things into it
+  as like we use [style] in html to give a color like style = "color: blue"
+  title.style.backgroundcolor = 'green' also change the padding
+  title.style.padding = "15px" , title.style.borderRadius = "15px"
+   we can also get the text content by using title.textContent or title.innerHTML
+   or title.innertext but there is a difference between them also as idf 
+   we use span and add some new code and print then 
+   title.innercontent gives the full text and innertext does not give
+   in inner.HTML it gives each and everything written in the code
+   we can get too many things by using different libraries like
+   document.getElementByClassName('any classname') we can get the 
+   whole line code by using document.querySelector('h2') and
+   document.querySelector('#title') and document.querySelector('.heading')
+   we can also use it for password like document.querySelector('input[type="password"]')
+   we can any css selector by us eof queryselector also find the first child
+   document.querySelector('p:first-child')....
+
+   if we want to vhange something in list so we can change it on 
+   console like use syntax document.querySelector('ul') by this we can easily change the color of
+   any type of list by writting this document.querySelector('ul') we
+   select whole unordered list then after it save it in a variable
+   const myul = document.querySelector('ul') then after it go and select the list
+   by using syntax myul.document.querySelector('li') 
+
+   now the font is not has any color and we want to turn it into some
+   color like green so we use to first store it in a variable
+   const turngreen = myul.document.querySelector('li') 
+   turngreen.style.backgroundcolor = "green" we can also change its padding
+   by turngreen.style.padding = "15px"
+   we can also get what turns green means html code by using innerHTML
+   or change the text by using turngreen.innertext= "five";
+   in ul list are listed is in the form of type of array but "{not array}"
+   sometimes it works like same for example if we use this document.querySelector('li')
+   and then see NodeList[] we can also change the things by going into it but
+   it is not array change by doing{lecture dekh lena at 25 : 00 se}
+   there are two different things nodelist and array in which we have map in array 
+   but not in nodelist kahi hadd tak dono same hote hai but same nhi haote 
+   remember the thing we can change the color of the list by using tempL1List.style.color = 'green'
+   but before that we have to initialsie the temp list by using {{document.querySelectorAll('li')}}
+   and then can find them with their indexing as if i want to change the clor of 
+   1st index then tempL1List[1].style.color = 'green';
+   example below:=>
+   const myh1 = document.querySelectorAll('h1')
+   press enter see undefined 
+   myh1.style.color = 'green'
+   myh1[0].style.color = 'green'
+
+   we can use foreach() here for coloring each and every list for example there  is a list
+   tempL1List.foreach(function (l) {
+   l.style.backgroundColor = 'green'
+   })
+
+    now we are going to use getElementByclassName
+    agr mujhe saari list laake do jisme class lagi ho "list-item"
+    then mujhe karna padega document.getElementsByClassName('list-item')
+     
+    we can only use for each when the type is arrya because in array there 
+    is map and in nodelist there is no map se we can not us efor each there
+    so for using it we have to convert nodelist into array for that we do
+    Array.from(tempClassList) after this it converts into array and map
+    is available at that time
+    
+    
+     
+   --> 
+ 
